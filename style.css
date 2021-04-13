@@ -3,12 +3,14 @@
     box-sizing: border-box;
 }
 
-body {
+body,html {
     font-family: "Poppins", sans-serif;
     margin: 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     width: 100%;
+    padding-top: 8%;
+  
 }
 
 .container {
@@ -121,16 +123,12 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    position: fixed;
 }
 
 ul {
     color: white;
     display: flex;
     list-style-type: none;
-    overflow: hidden;
 }
 
 ul li {
@@ -145,7 +143,95 @@ ul li a {
     text-decoration: none;
     color: white;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /* Style the header */
+  .about {
+    
+    background-color:rgba(250, 247, 231, 1);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'ABeeZee', sans-serif;
+  }
+  
+  h1{
+    
+      color: black;
+  }
+  .font{
+    font-family: 'ABeeZee', sans-serif;
+  }
+  
+  h2{
+      color:#221e1e;
+  }
+  h3{
+      color:rgb(3, 3, 3);
+  }
+  h4{
+      text-align: right;
+  }
+  .featureproduct {
+    background-color: rgba(255, 238, 244, 1);
+    padding: 20px;
+    text-align: center;
+    font-family: 'ABeeZee', sans-serif;
+  
+  }
+   .values{
+    box-sizing:border-box;
+     display: flex;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+ 
+  }
+  
+ /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
 
+  }
+  
+ @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
 
 /* Banner Carousel */
 
